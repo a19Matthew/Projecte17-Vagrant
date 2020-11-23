@@ -19,12 +19,18 @@
 
 ```sh
 $ vagrant up #Aquesta comanda llegira el Vagrantfile i inicialitzará una VM privionada.
-$ vagrant global-status #Aquesta comanda llista informació de les VM's. Hem de fixar-nos en la ID.
-$ vagrant ssh [id-de-la-maquina] #Així podrem conectar-nos per ssh a la VM.
 ```
 # Ús de adminer
 Per accedir a adminer, només cal obreir un navegador i inserir:
 >http://localhost:8080/adminer/adminer
+>
+A continuació inserim les següents dades al formulari:
+| Input | Valor |
+| ------ | ----------- |
+| Motor de base de dades  | MySQL |
+| Servidor    | 192.168.33.12 |
+| Usuari | root |
+| Contrassenya    | root |
 
 ## Autor
 
