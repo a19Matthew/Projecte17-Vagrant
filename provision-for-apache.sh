@@ -4,13 +4,13 @@ apt-get update
 #Instala apache2
 apt-get install -y apache2
 #Instala php i dependencies
-apt-get install -y php libapache2-mod-php php-mysql
+apt-get install -y php5 php5-mysql
 #Encen el servei apache2
 sudo /etc/init.d/apache2 restart
 #Es canvia de directori al public de apache
 cd /var/www/html
+sudo apt-get install -y git
 #Descarrega adminer
-wget https://github.com/vrana/adminer/releases/download/v4.3.1/adminer
--4.3.1-mysql.php
+git clone https://github.com/vrana/adminer.git
 #Mou adminer.php a la public
-mv adminer-4.3.1-mysql.php adminer.php
+#cp adminer/index.php index.php

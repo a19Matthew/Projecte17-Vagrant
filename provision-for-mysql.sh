@@ -1,6 +1,7 @@
 #!/bin/bash
+apt-get update
 #Instala debconf-utils
-apt-get -y install debconf-utils
+apt-get install -y debconf-utils
 #Asigna root a una variable
 DB_ROOT_PASSWD=root
 #Canvia la contrassenya de mysql
@@ -10,7 +11,7 @@ password $DB_ROOT_PASSWD”
 debconf-set-selections <<< ”mysql-server mysql-server/root_password_again
 password $DB_ROOT_PASSWD”
 #Instala mysql-server
-apt-get install -y mysql-server
+apt-get install -y mysql-server-5.5
 #Afegeix una linea de codi a mysqld.cnf
 sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/mysql/mysql.conf.d/mysqld.cnf
 #Reinicia mysql

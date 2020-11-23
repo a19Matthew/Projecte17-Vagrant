@@ -24,7 +24,7 @@ $ vagrant ssh [id-de-la-maquina] #Així podrem conectar-nos per ssh a la VM.
 ```
 # Ús de adminer
 Per accedir a adminer, només cal obreir un navegador i inserir:
->http://localhost:8080/adminer.php
+>http://localhost:8080/adminer/adminer
 
 ## Autor
 
