@@ -31,6 +31,7 @@ A continuació inserim les següents dades al formulari:
 | Servidor    | 192.168.33.12 |
 | Usuari | root |
 | Contrassenya    | root |
+| Base de dades | aso |
 
 ## Autor
 
